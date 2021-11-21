@@ -17,7 +17,8 @@ $userlname = $_SESSION[ "lname" ];
 		
 
 		<div class="col-md-12">
-			<h3> Welcome <a href="welcomestudent.php" <?php echo "<span style='color:red'>".				$userfname." ".$userlname."</span>";?> </a></h3>
+			<h1> Welcome <a href="welcomestudent.php" <?php echo "<span style='color:red'>".				
+			$userfname." ".$userlname."</span>";?> </a></h1>
 			
 		<?php 
 			
@@ -34,14 +35,17 @@ $userlname = $_SESSION[ "lname" ];
 							<h2>Subject: <?PHP echo $row['V_Title'];?></h2>
 						</td>
 						<br>
-						
+						<br>
 						<td>
-							<?PHP echo $row['V_Url'];?>
+							<h2> Description: <?PHP echo $row['V_Remarks'];?> </h2>
 						</td>
 						<br>
 						<td>
-							<p> Description <?PHP echo $row['V_Remarks'];?> </p>
+				
+						<a href="<?php echo $row['V_Url']; ?>"><input type=	"button" Value="Join The Class"  class="btn btn-info" style="border-radius:0%"  data-toggle="modal" data-target="#myModal"></a>
 						</td>
+                        <br>				
+						<br>						
 						<br>
 						<td><a href="viewvideos.php"> <input type=	"button" Value="Back"  class="btn btn-info" style="border-radius:0%"  data-toggle="modal" data-target="#myModal"></a>
 						</td>

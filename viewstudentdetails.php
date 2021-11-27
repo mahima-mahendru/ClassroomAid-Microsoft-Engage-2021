@@ -8,7 +8,7 @@ if ( $_SESSION[ "fidx" ] == "" || $_SESSION[ "fidx" ] == NULL ) {
 $userid = $_SESSION[ "fidx" ];
 $fname = $_SESSION[ "fname" ];
 ?>
-<?php include('fhead.php');  ?>
+<?php include('after-login.php');  ?>
 <div class="container">
 	<div class="row">
 		<div class="col-md-12">

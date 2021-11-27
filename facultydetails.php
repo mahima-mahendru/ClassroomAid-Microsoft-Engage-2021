@@ -7,10 +7,19 @@ if ( $_SESSION[ "umail" ] == "" || $_SESSION[ "umail" ] == NULL ) {
 
 $userid = $_SESSION[ "umail" ];
 ?>
-<?php include('adminhead.php'); ?>
+<!DOCTYPE html>
+<html lang="en">
+<?php include('after-login.php'); ?>
 
-<div class="container">
-	<div class="row">
+<body>
+
+ 
+  <main id="main">
+
+    <!-- ======= Breadcrumbs Section ======= -->
+    <section class="breadcrumbs">
+      <div class="container">
+      <div class="row">
 		<?php
 		include( "database.php" );
 		if ( isset( $_REQUEST[ 'deleteid' ] ) ) {
@@ -19,18 +28,22 @@ $userid = $_SESSION[ "umail" ];
 			//delete faculty Query
 			$sql = "DELETE FROM `facutlytable` WHERE FID = $deleteid";
 
-			if ( mysqli_query( $connect, $sql ) ) {
-				echo "
-
-					<br><br>
-					<div class='alert alert-success fade in'>
-					<a href='#' class='close' data-dismiss='alert' aria-label='close'>&times;</a>
-					<strong>Success!</strong> Faculty Details has been deleted.
-					</div>";
-			} else {
-				//error message if SQL query fails
-				echo "<br><Strong>Faculty Details Updation Faliure. Try Again</strong><br> Error Details: " . $sql . "<br>" . mysqli_error( $connect );
+			$query_run=mysqli_query( $connect, $sql );
+			//alert message
+			if($query_run)
+			{
+				$_SESSION['status']="Deleted Successfully!";
+				$_SESSION['status_code']="success";
+				
 			}
+			else
+			{
+				$_SESSION['status']="Unsuccessful!";
+				$_SESSION['status_code']="error";
+		
+
+			}
+			
 			//close the connection
 			mysqli_close( $connect );
 		}
@@ -38,11 +51,18 @@ $userid = $_SESSION[ "umail" ];
 	</div>
 
 
-	<div class="row">
-		<div class="col-md-12">
-			<h3 class="page-header">Welcome <a href="welcomeadmin">Admin</a> </h3>
-			<a href="addnewfaculty"><button type="button" value="Add New Faculty" class="btn btn-success btn-sm" style="border-radius:0%">Add New Faculty</button></a>
-			<?php
+        <div class="d-flex justify-content-between align-items-center">
+        <h3 class="page-header">Welcome <a href="welcomeadmin">Admin</a> </h3>
+		<a href="addnewfaculty"><button type="button" value="Add New Faculty" class="btn btn-success btn-sm" style="border-radius:0%">Add New Faculty</button></a>
+			
+        </div>
+
+      </div>
+    </section><!-- End Breadcrumbs Section -->
+
+    <section class="inner-page">
+      <div class="container" >
+      <?php
 			include( "database.php" );
 			$sql = "SELECT * from  facutlytable";
 			$result = mysqli_query( $connect, $sql );
@@ -96,8 +116,31 @@ $userid = $_SESSION[ "umail" ];
 			<?php $count++; } ?>
 			</table>
 			
+      </div>
+    </section>
 
-		</div>
-	</div>
+  </main><!-- End #main -->
 
-	<?php include('allfoot.php'); ?>
+ <!-- ======= Footer ======= -->
+ <footer id="footer">
+    
+   
+</footer><!-- End Footer -->
+
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+  <div id="preloader"></div>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/purecounter/purecounter.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
+  <?php include('alert.php'); ?>
+</body>
+
+</html>

@@ -1,4 +1,7 @@
-<?php include('allhead.php'); ?>
+<!DOCTYPE html>
+<html lang="en">
+<?php include('before-login.php'); ?>
+session_start();
 <script>
 	//javascript validation for various fildss
 	function validateForm() {
@@ -57,8 +60,28 @@
 	}
 </script>
 
-<div class="container" style="max-width: 1200px;">
-	<div class="row">
+<!-- ===========body section ========= ---->
+
+<body>
+  
+  <main id="main">
+
+    <!-- ======= Breadcrumbs Section ======= -->
+    <section class="breadcrumbs">
+      <div class="container">
+
+        <div class="d-flex justify-content-between align-items-center">
+        <legend>
+						<h3 style="padding-top: 25px;"> Registration Form </h3>
+					</legend>
+        </div>
+
+      </div>
+    </section><!-- End Breadcrumbs Section -->
+
+    <section class="inner-page">
+      <div class="container" style="width:600px">
+	  <div class="row">
 		<?PHP
 		include( "database.php" );
 		if ( isset( $_POST[ 'submit' ] ) ) {
@@ -71,38 +94,33 @@
 			$gender = $_POST[ 'gender' ];
 			$phno = $_POST[ 'phno' ];
 			$email = $_POST[ 'email' ];
-			$pass = $_POST[ 'pass' ];
-
-			$done = "
-			<center>
-			<div class='alert alert-success fade in __web-inspector-hide-shortcut__'' style='margin-top:10px;'>
-			<a href='#' class='close' data-dismiss='alert' aria-label='close' title='close'>&times;</a>
-			<strong><h3 style='margin-top: 10px;
-			margin-bottom: 10px;'> Register Successfully Complete. Now You Can Login With Your Email & Password</h3>
-			</strong>
-			</div>
-			</center>
-			";
+			$pass = $_POST[ 'pass' ];		
 
 			$sql = "INSERT INTO `studenttable` (`FName`, `LName`, `FaName`, `DOB`, `Addrs`, `Gender`, `PhNo`, `Eid`, `Pass`,`Course`) VALUES ('$fname','$lname','$faname','$dob','$addrs','$gender','$phno','$email','$pass','$course')";
 			//close the connection
-			mysqli_query( $connect, $sql );
+			$query_run=mysqli_query( $connect, $sql );
+             if($query_run)
+			 {
+				 $_SESSION['status']="Registration Complete!";
+				 $_SESSION['status_code']="success";
+				 
+			 }
+			 else
+			 {
+				 $_SESSION['status']="Registration Incomplete!";
+				 $_SESSION['status_code']="error";
+			
 
-			echo $done;
+			 }		
+			
 		}
 
 		?>
 
 	</div>
-	<div class="row">
-		<div class="col-md-3"></div>
-
-		<div class="col-md-6">
-			<form name="register" action="" method="POST" onsubmit="return validateForm()">
+      <form name="register" action="" method="POST" onsubmit="return validateForm()">
 				<fieldset>
-					<legend>
-						<h3 style="padding-top: 25px;"> Registration Form </h3>
-					</legend>
+					
 					<div class="control-group form-group">
 						<div class="controls">
 							<label>First Name: <span style="color: #ff0000;">*</span></label>
@@ -126,6 +144,7 @@
 							<p class="help-block"></p>
 						</div>
 					</div>
+					
 
 					<div class="control-group form-group">
 						<div class="controls">
@@ -197,13 +216,38 @@
 
 					<button type="submit" name="submit" class="btn btn-primary">Register</button>
 					<button type="reset" name="reset" class="btn btn-danger">Clear</button>
-
+                    
 
 				</fieldset>
 			</form>
-		</div>
+      </div>
+    </section>
 
-		<div class="col-md-3"></div>
-	</div>
-</div>
-<?php include('allfoot.php'); ?>
+  </main><!-- End #main -->
+
+ <!-- ======= Footer ======= -->
+ <footer id="footer">
+    
+   
+</footer><!-- End Footer -->
+
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+  <div id="preloader"></div>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/purecounter/purecounter.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="js/sweetalert.min.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
+  <?php include('alert.php'); ?>
+
+  
+</body>
+
+</html>

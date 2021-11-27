@@ -1,15 +1,24 @@
-<?php include('allhead.php'); ?>
-<div class="container">
-	<div class="row">
-	</div>
-	<div class="row">
-		<div class="col-md-4"></div>
+<?php include('before-login.php'); ?> 
+ 
+  <main id="main">
 
-		<div class="col-md-4">
-			<fieldset>
-				<legend>
+    <!-- ======= Breadcrumbs Section ======= -->
+    <section class="breadcrumbs">
+      <div class="container">
+
+        <div class="d-flex justify-content-between align-items-center">
+        <legend>
 					<h3 style="padding-top: 25px;"><span class="glyphicon glyphicon-lock"></span>&nbsp;Admin Login</h3>
-				</legend>
+		</legend>
+        </div>
+
+      </div>
+    </section><!-- End Breadcrumbs Section -->
+
+    <section class="inner-page">
+      <div class="container" style="width:600px">
+      <fieldset>
+				
 				<!-- Admin login form -->
 				<form name="adminlogin" action="loginlinkadmin.php" method="POST">
 					<div class="control-group form-group">
@@ -32,8 +41,31 @@
 					</center>
 			</fieldset>
 			</form>
-		</div>
+      </div>
+    </section>
 
-		<div class="col-md-4"></div>
-	</div>
-	<?php include('allfoot.php'); ?>
+  </main><!-- End #main -->
+
+ <!-- ======= Footer ======= -->
+ <footer id="footer">
+    
+   
+</footer><!-- End Footer -->
+
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+  <div id="preloader"></div>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/purecounter/purecounter.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>

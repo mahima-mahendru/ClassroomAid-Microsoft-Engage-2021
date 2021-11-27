@@ -35,7 +35,7 @@ $userlname = $_SESSION[ "lname" ];
 
 <a href="viewvideos.php?eid=<?php echo $userid;  ?>"> <button  href="" type="submit" class="btn btn-success" style="border-radius:0%;"><i class="fa fa-video-camera"></i>Class Schedule</button></a>
 
-<a href="logoutstudent"><button  href="" type="submit" class="btn btn-danger" style="border-radius:0%;">Logout</button></a>
+<a href="logoutstudent.php"><button  href="" type="submit" class="btn btn-danger" style="border-radius:0%;">Logout</button></a>
 
       </div>
     </section>

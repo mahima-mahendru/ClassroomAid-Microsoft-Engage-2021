@@ -1,10 +1,13 @@
 # Classroom-Aid : Microsoft Engage Mentorship 2021
 
-# AIM OF THE PROJECT 
-* The aim of the project is to help the students and teachers to 
+# Aim Of The Project 
+*A one-stop, central destination for tools which aim to empower the learners and their facilitators.
+It assists students as well as educators by providing them with space for schedules and links to eliminate confusion and chaos, thus saving time and making them organized.
+On this portal the admins  can register, add , delete or change student as well as teachers' details.
 
+*Since the teachers can upload links for their scheduled classes, it instills confidence in the students  as they can plan their day at a glance and on one click they can join in the classes as well.
 
-# TECH-STACK USED
+# Tech-Stack Used
 This is a Web based Application developed using :
 
 * PHP as a Host Language,

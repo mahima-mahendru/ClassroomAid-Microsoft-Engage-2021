@@ -1,26 +1,19 @@
 # Classroom-Aid : Microsoft Engage Mentorship 2021
 
-This is a Web based Application developed using PHP as a Host Language, MySql for database, HTML, CSS and JavaScript for front-end developement.
+# AIM OF THE PROJECT 
+* The aim of the project is to help the students and teachers to 
 
-Database for the Application is in "DATABASE" folder. It can be imported to your localhost(phpMyAdmin) or any other servers.
-Also configure the "connec.php" to set up the necessary connections with the database.
 
-More features are yet to be developed and implemented. Till then, Happy Coding :)
+# TECH-STACK USED
+This is a Web based Application developed using :
 
-**HOME**
+* PHP as a Host Language,
+* MySql for database, 
+* HTML, CSS and JavaScript for front-end developement.
 
-![](images/one.jpg)
 
-**HOME (CNTD.)**
-![](images/two.jpg)
 
-**CONTACT US**
 
-![](images/three.jpg)
-
-**SIGNUP**
-
-![](images/four.jpg)
 
 # Instructions: How to Run
 1.After you finish downloading the project, unzip the project file and head over to your XAMPP directory.
@@ -59,8 +52,90 @@ More features are yet to be developed and implemented. Till then, Happy Coding :
 * Add new faculty 
 * Logout feature for student/faculty/admin.
 
+# LANDING PAGE
+* Displays the about section, contact section and regsiter now feature.
+* The navigation bar consists of home, about, student registration, login and contact fields for easy access.
+* A scroll back-to-top-button is also added for quick navigation.
+
+![](images/landing-page.jpg)
+
+
 # STUDENT SECTION
-    **STUDENT LOGIN**
-      ![](images/student-login.jpg)
+**STUDENT LOGIN**
+
+Students can login to the portal using their email-id and password.
+
+ ![](images/student-login.jpg)
  
+**STUDENT PROFILE**
+
+Students can view their information stored in their institution's database.
+
+ ![](images/student-profile.jpg)
+ 
+**STUDENT CLASS-SCHEDULE**
+
+Students can view the upcoming classes and access the class links with ease in an organised manner.
+
+They can see the class timings, subect, description and link to join class.
+
+ ![](images/student-class-schedule.jpg)
+ 
+ 
+# FACULTY SECTION
+**FACULTY LOGIN**
+
+* Faculty can login to the portal using their id and password.
+
+ ![](images/faculty-login.jpg)
+ 
+**FACULTY PROFILE**
+
+* Faculty can view their information stored in the institution's database.
+
+ ![](images/faculty-profile.jpg)
+ 
+**FACULTY CAN ADD/DELETE/EDIT CLASS SCHEDULE**
+
+* Students can view the upcoming classes and access the class links with ease in an organised manner.
+
+* They can see the class timings, subect, description and link to join class.
+
+ ![](images/update-class.jpg)
+ 
+ 
+ # ADMIN SECTION
+**ADMIN LOGIN**
+
+* Students can login to the portal using their email-id and password.
+
+ ![](images/admin-login.jpg)
+ 
+**ADMIN DASHBOARD**
+
+* Students can view their information stored in their institution's database.
+
+ ![](images/admin-dashboard.jpg)
+ 
+**ADMIN ADD/VIEW/EDIT/DELETE STUDENT**
+
+* Admins can view the registered students, add new students,edit student details and delete from database.
+
+ ![](images/add-delete-edit-student.jpg)
+ 
+ **ADMIN ADD/VIEW/EDIT/DELETE FACULTY**
+ 
+ * Admins can view the faculty members, add new members,edit faculty details and delete from database.
+
+ ![](images/add-delete-edit-faculty.jpg)
+ 
+  ![](images/addnew-faculty.jpg)
+
+ 
+
+ 
+
+
+ 
+
  

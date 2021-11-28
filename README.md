@@ -59,4 +59,8 @@ More features are yet to be developed and implemented. Till then, Happy Coding :
 * Add new faculty 
 * Logout feature for student/faculty/admin.
 
-
+# STUDENT SECTION
+    **STUDENT LOGIN**
+      ![](images/student-login.jpg)
+ 
+ 

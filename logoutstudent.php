@@ -1,8 +1,5 @@
 <?php
 session_start();
-?>
-<?php
-$_SESSION["sidx"]=="";
-session_unset('sidx');
+unset($_SESSION["sidx"]);
 header('Location:index');
 ?>

@@ -38,9 +38,8 @@ This is a Web based Application developed using :
 
 
 
-
-
 # Instructions: How to Run
+
 1.After you finish downloading the project, unzip the project file and head over to your XAMPP directory.
 
 2.There you’ll find a folder named “htdocs”.
@@ -55,9 +54,13 @@ This is a Web based Application developed using :
 
 7.Click on the “Import” tab and choose the database file (.sql) which is provided under the folder naming “DATABASE”.
 
-8.After setting up all these, go to URL “http://localhost/[ PROJECT_FOLDER_NAME ]/“
+**8.In "database.php" file uncomment localhost database connection and comment the remote connection.**
 
-9.All the login details are provided inside the project folder in “LOGIN DETAILS.txt”.
+9.After setting up all these, go to URL “http://localhost/[ PROJECT_FOLDER_NAME ]/“
+
+10.All the login details are provided inside the project folder in “LOGIN DETAILS.txt”.
+
+
 
 # Available Features:
 * Landing Page

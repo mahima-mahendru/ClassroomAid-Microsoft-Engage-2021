@@ -40,3 +40,23 @@ More features are yet to be developed and implemented. Till then, Happy Coding :
 8.After setting up all these, go to URL “http://localhost/[ PROJECT_FOLDER_NAME ]/“
 
 9.All the login details are provided inside the project folder in “LOGIN DETAILS.txt”.
+
+# Available Features:
+* Landing Page
+* About Section
+* Contact Section
+* Student registration
+* Students Dashboard
+* Faculty Dashboard
+* Admin Dsshboard
+* Post Queries
+* Manage Queries
+* Schedule class and add class links
+* Modify class schedule
+* Edit/Delete Student
+* Edit/Delete Faculty
+* Add new student
+* Add new faculty 
+* Logout feature for student/faculty/admin.
+
+

@@ -1,9 +1,5 @@
 <?php
 session_start();
-?>
-<?php
-$_SESSION["umail"]=="";
-session_unset('umail');
-
+unset($_SESSION["umail"]);
 header('Location:index.php');
 ?>

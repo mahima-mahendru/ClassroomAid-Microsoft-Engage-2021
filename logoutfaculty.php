@@ -1,6 +1,5 @@
 <?php
 session_start();
-$_SESSION["fidx"]=="";
-session_unset('fidx');
+unset($_SESSION["fidx"]);
 header('Location:index.php');
 ?>

@@ -1,0 +1,28 @@
+----------------------------------MICROSOFT-ENGAGE-2021------------------------------------------------
+
+
+**Database Name: classroomaid**
+
+--------------------------------------------------------------
+**Recommended PHP Version 5.6 or Newer**
+
+--------------------------------------------------------------
+
+**Admin Login Details**
+
+Username: admin
+Password: admin
+
+--------------------------------------------------------------
+**Student Login Details**
+
+Email   : student1@gmail.com
+Password: student1
+
+---------------------------------------------------------------
+**Faculty Login Details**
+
+ID      : 113
+Password: faculty1
+
+

@@ -131,6 +131,7 @@ They can see the class timings, subect, description and link to join class.
  
  
  # ADMIN SECTION
+ 
 **ADMIN LOGIN**
 
 * Students can login to the portal using their email-id and password.
@@ -154,6 +155,8 @@ They can see the class timings, subect, description and link to join class.
  * Admins can view the faculty members, add new members,edit faculty details and delete from database.
 
  ![](images/add-delete-edit-faculty.jpg)
+ 
+ * Add new faculty members
  
   ![](images/addnew-faculty.jpg)
   

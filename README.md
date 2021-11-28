@@ -69,9 +69,7 @@ This is a Web based Application developed using :
 * Student registration
 * Students Dashboard
 * Faculty Dashboard
-* Admin Dsshboard
-* Post Queries
-* Manage Queries
+* Admin Dashboard
 * Schedule class and add class links
 * Modify class schedule
 * Edit/Delete Student
@@ -158,9 +156,11 @@ They can see the class timings, subect, description and link to join class.
  ![](images/add-delete-edit-faculty.jpg)
  
   ![](images/addnew-faculty.jpg)
+  
 
- 
+# phpMyAdmin Database
 
+  ![](images/php.jpg)
  
 
 

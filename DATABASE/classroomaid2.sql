@@ -18,7 +18,7 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- Database: `classroomaid2`
+-- Database: `classroomaid`
 --
 
 -- --------------------------------------------------------
@@ -37,8 +37,8 @@ CREATE TABLE `admin` (
 --
 
 INSERT INTO `admin` (`Aid`, `Apass`) VALUES
-('mahi', 'mahi'),
-('mahima', 'mahima');
+
+('admin', 'admin'),('mahima','mahima');
 
 -- --------------------------------------------------------
 
@@ -63,7 +63,9 @@ CREATE TABLE `facutlytable` (
 --
 
 INSERT INTO `facutlytable` (`FID`, `FName`, `FaName`, `Addrs`, `Gender`, `JDate`, `City`, `Pass`, `PhNo`) VALUES
-(101, 'rashmi ', 'mahendru', '280  CR PARK', 'Female', '0000-00-00', 'New Delhi', 'rashmi', 9871184053);
+(113, 'faculty1', 'FN1', 'South Bengaluru', 'Female', '2000-10-10', 'Bengaluru', 'faculty1', 9871144053),
+(114, 'faculty2', 'FN2', 'North Bengaluru', 'Male', '2010-11-10', '	New Delhi', 'faculty2', 9991144053);
+
 
 -- --------------------------------------------------------
 
@@ -90,14 +92,8 @@ CREATE TABLE `studenttable` (
 --
 
 INSERT INTO `studenttable` (`Eno`, `FName`, `LName`, `FaName`, `Addrs`, `Gender`, `Course`, `DOB`, `PhNo`, `Pass`, `Eid`) VALUES
-(146891650, 'Mahima', 'Mahendru', 'Vivek Mahendru', '280  CR Park main road', 'Female', 'CSE', '1999-10-07', 9667230789, 'mahima', '1rn18cs056.mahima@gmail.com'),
-(146891655, 'Mehak', 'Kaur', 'Diljeet Kaur', 'B-110  LajPat Nagar', 'Female', 'CSE', '1999-03-05', 7023658960, 'mehak', 'mehakcool@gmail.com'),
-(146891664, 'xyzlkm', 'lkm', 'lmkjhc', 'kslhdkhqkldh', 'Male', 'cse', '2000-10-10', 8888882888, 'example', 'example@gmail.com'),
-(146891667, 'hhh', 'jjj', 'ssss', 'fslfsl', 'Male', 'sss', '2000-10-10', 9999999999, 'a', 'a@gmail.com'),
-(146891668, 'hhh', 'jjj', 'ssss', 'fslfsl', 'Male', 'sss', '2000-10-10', 9999999999, 'a', 'a@gmail.com'),
-(146891669, 'hhklh', 'hlhlkh', 'llk', 'jjjj', 'Male', 'klkkk', '2000-10-10', 9999999999, 'a', 'a@gmail.com'),
-(146891670, 'hhklh', 'hlhlkh', 'llk', 'jjjj', 'Male', 'klkkk', '2000-10-10', 9999999999, 'a', 'a@gmail.com'),
-(146891671, 'hdklhlaksh', 'mad', 'ssss', 'mddd', 'Male', 'sss', '2000-02-11', 1234567892, 'saa', 'sa@gmail.com');
+(146891650, 'student1', 'student1', 'FatherName1', '28-CR Park', 'Female', 'CSE', '1999-10-07', 9667230789, 'student1', 'student1@gmail.com'),
+(146891655, 'student2', 'student2', 'FatherName2', 'B-11 LajPat Nagar', 'Male', 'CSE', '1999-03-05', 7023658960, 'student2', 'student2@gmail.com');
 
 -- --------------------------------------------------------
 
@@ -118,7 +114,7 @@ CREATE TABLE `video` (
 --
 
 INSERT INTO `video` (`V_id`, `V_Title`, `V_Time`, `V_Url`, `V_Remarks`) VALUES
-(9, 'English', '10:05 AM', 'https://www.youtube.com/watch?v=C4N3sMg25fQ', 'Learn about parts of speech.');
+(9, 'English', '10:05 AM', 'https://meet.google.com/aqm-itqs-awb', 'Learn about parts of speech.');
 
 --
 -- Indexes for dumped tables

@@ -1,11 +1,33 @@
 # Classroom-Aid : Microsoft Engage Mentorship 2021
+The working demo of the project can be accessed from here [Classroom-Aid](https://classroomaid.herokuapp.com/).
+
+**LOGIN CREDENTIALS FOR THE DEPLOYED APP:**
+
+**STUDENT:**  
+
+              Email: student1@gmail.com
+
+              Password: student1
+            
+**FACULTY:**
+
+               ID: 113
+
+               Password: faculty1
+            
+**ADMIN :**
+
+              Username: mahima
+
+              Password: mahima
+
 
 # Aim Of The Project 
-*A one-stop, central destination for tools which aim to empower the learners and their facilitators.
+* A one-stop, central destination for tools which aim to empower the learners and their facilitators.
 It assists students as well as educators by providing them with space for schedules and links to eliminate confusion and chaos, thus saving time and making them organized.
 On this portal the admins  can register, add , delete or change student as well as teachers' details.
 
-*Since the teachers can upload links for their scheduled classes, it instills confidence in the students  as they can plan their day at a glance and on one click they can join in the classes as well.
+* Since the teachers can upload links for their scheduled classes, it instills confidence in the students  as they can plan their day at a glance and on one click they can join in the classes as well.
 
 # Tech-Stack Used
 This is a Web based Application developed using :

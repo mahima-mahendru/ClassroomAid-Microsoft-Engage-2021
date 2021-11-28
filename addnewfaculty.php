@@ -78,7 +78,9 @@ $userid = $_SESSION[ "umail" ];
 					<br>
 				<div class="form-group">
 					<input type="submit" value="Add New Faculty" name="addnewfaculty" style="border-radius:0%" class="btn btn-success">
-				</div>
+					<a href="facultydetails.php"> <input type="button" Value="Back"  class="btn btn-success" style="border-radius:0%;width:155px"></a>
+			
+			</div>
 
 			</form>
 			<?php
@@ -114,13 +116,13 @@ $userid = $_SESSION[ "umail" ];
 				}
 				//close the connection
 				mysqli_close( $connect );
+				header('Location:welcomeadmin');
 
 			}
 
 
 			?>
 			<br>
-			<a href="facultydetails.php"> <input type="button" Value="Back"  class="btn btn-success" style="border-radius:0%;width:155px"></a>
 			
       </div>
     </section>
